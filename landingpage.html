@@ -1,0 +1,972 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sambal Maknyus - Sambal Rumahan Pedas Nikmat</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="images/a.png" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- AOS Animation Library -->
+  <style>
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #25D366;
+      color: white;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      z-index: 100;
+      transition: all 0.3s;
+    }
+    .whatsapp-float:hover {
+      transform: scale(1.1);
+    }
+    .star-rating {
+      color: #fbbf24;
+      letter-spacing: 2px;
+    }
+    .section-container {
+      width: 100%;
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+    @media (min-width: 640px) {
+      .section-container {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+      }
+    }
+    .no-scrollbar::-webkit-scrollbar {
+    display: none
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE & Edge */
+    scrollbar-width: none;    /* Firefox */
+  }
+  </style>
+</head>
+<!--end of link and style-->
+
+
+<!-- Body -->
+<body class="font-[Poppins] text-gray-800 bg-white scroll-smooth"">
+
+<!-- Navigation Bar -->
+<nav class="fixed top-2 left-1/2 transform -translate-x-1/2 z-50 w-full px-2"">
+  <div class="bg-white/50 backdrop-blur-md shadow-xl rounded-full border border-white/30 overflow-x-auto max-w-screen-lg mx-auto no-scrollbar">
+    <div class="flex gap-4 text-sm font-semibold text-gray-800 whitespace-nowrap px-4 py-2 justify-center min-w-fit">
+      <a href="#produk" class="hover:text-red-500 transition">Produk</a>
+      <a href="#harga" class="hover:text-red-500 transition">Harga</a>
+      <a href="#detail" class="hover:text-red-500 transition">Details</a>
+      <a href="#varian" class="hover:text-red-500 transition">Varian</a>
+      <a href="#testimoni" class="hover:text-red-500 transition">Testimoni</a>
+      <a href="#faq" class="hover:text-red-500 transition">FAQ</a>
+      <a href="#order" class="hover:text-red-500 transition">Order</a>
+      <a href="#kontak" class="hover:text-red-500 transition">Kontak</a>
+    </div>
+  </div>
+</nav>
+
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/6281234567890" class="whatsapp-float fixed bottom-[90px] md:bottom-6 right-4 z-50" target="_blank">
+    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="white"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.625.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+  </a>
+
+  <!-- Mobile-First Header Section -->
+  <header class="mx-3 relative bg-red-400 text-white pt-10 pb-8 rounded-b-[50px] shadow-lg" data-aos="fade-up">
+    <div class="section-container">
+      <div class="flex flex-col items-center text-center pt-5">
+        <!-- Product Image - Top on Mobile -->
+        <div class="w-32 h-32 bg-white rounded-full shadow-xl overflow-hidden border-4 border-white mb-4">
+          <img src="images/img.png" alt="Sambal Maknyus" class="w-full h-full object-cover">
+        </div>
+        
+        <!-- Text Content -->
+        <div>
+          <h1 class="text-2xl font-bold leading-tight mb-2">
+            <span class="block">Nikmati Makanan Favoritmu</span>
+            <span class="text-yellow-300">Tanpa Harus Ribet</span>
+          </h1>
+          <p class="opacity-90">Sambal autentik langsung ke meja makan Anda</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+ <!-- Product Gallery Section -->
+<section id="produk" class="mx-3 bg-purple-100 py-8 mt-4 rounded-t-[50px] rounded-b-[50px] shadow-lg scroll-mt-28" data-aos="zoom-in">
+  <div class="section-container">
+    <h2 class="text-xl font-semibold mb-4 text-center text-yellow-600">Galeri Produk</h2>
+
+    <!-- Wrapper scroll di mobile dan center di desktop -->
+    <div class="overflow-x-auto produk-gallery">
+      <div class="flex snap-x snap-mandatory gap-5 px-4 md:gap-6 md:justify-center md:px-0 w-full">
+        
+        <!-- Sambal Bawang -->
+        <div class="snap-start flex-shrink-0 w-full max-w-xs md:w-64 md:h-64 h-72 rounded-xl overflow-hidden bg-white shadow-md transform scale-95 opacity-90 transition-all duration-500 ease-in-out hover:scale-100 hover:opacity-100 hover:shadow-xl">
+          <img src="images/merah.png" alt="Sambal Bawang" class="object-cover w-full h-full" />
+        </div>
+    
+        <!-- Sambal Hijau -->
+        <div class="snap-start flex-shrink-0 w-full max-w-xs md:w-64 md:h-64 h-72 rounded-xl overflow-hidden bg-white shadow-md transform scale-95 opacity-90 transition-all duration-500 ease-in-out hover:scale-100 hover:opacity-100 hover:shadow-xl">
+          <img src="images/hijau.png" alt="Sambal Hijau" class="object-cover w-full h-full" />
+        </div>
+    
+        <!-- Sambal Tomat -->
+        <div class="snap-start flex-shrink-0 w-full max-w-xs md:w-64 md:h-64 h-72 rounded-xl overflow-hidden bg-white shadow-md transform scale-95 opacity-90 transition-all duration-500 ease-in-out hover:scale-100 hover:opacity-100 hover:shadow-xl">
+          <img src="images/tomat.png" alt="Sambal Tomat" class="object-cover w-full h-full" />
+        </div>
+
+        <!-- Tambahkan foto produk disini-->
+    
+      </div>
+    </div>
+
+       
+
+      <!-- Badge Social Proof -->
+      <div class="flex justify-center gap-3 mt-4 flex-wrap">
+        <div class="bg-white border border-green-200 text-green-800 px-3 py-1 rounded-full text-sm font-medium flex items-center gap-1">
+          ⭐ 500+ Pelanggan
+        </div>
+        <div class="bg-white border border-red-200 text-red-800 px-3 py-1 rounded-full text-sm font-medium flex items-center gap-1">
+          🔥 Terjual 1000+ Botol
+        </div>
+      </div>
+      <!-- Product Description -->
+      <div class="mt-2 p-4 text-center">
+        <p class="text-lg">
+          Sambal Maknyus ini nggak main-main, dibuat dari bahan segar tanpa pengawet dan pedasnya pas banget!
+
+          Mau dimakan bareng nasi hangat, mie instan, atau gorengan, semuanya jadi naik level. Kelas!!
+
+          Rasa rumahan yang autentik, kayak sambal buatan ibu bikin kangen dan pasti nambah terus. 🌶️✨
+
+          Udah 500+ orang nyobain dan ketagihan. Kamu kapan?</p>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="harga" class="mx-3 py-10 bg-purple-100 mt-4 rounded-[50px] shadow-lg scroll-mt-28" data-aos="fade-up">
+    <div class="section-container">
+      <div class="text-center mb-6">
+        <h2 class="text-2xl font-bold text-gray-800">Daftar Harga</h2>
+      </div>
+  
+      <!-- Wrapper -->
+      <div
+        class="flex md:grid md:grid-cols-3 gap-4 overflow-x-auto md:overflow-visible snap-x snap-mandatory pb-4 px-1 scrollbar-hide justify-start md:justify-center"
+      >
+        <!-- Card -->
+        <div class="min-w-[250px] md:min-w-0 snap-start bg-white rounded-2xl shadow-md border p-4 flex-shrink-0">
+          <div class="flex items-center gap-3 mb-3">
+            <div class="w-10 h-10 bg-red-100 rounded-full flex items-center justify-center text-xl">🌶️</div>
+            <div>
+              <h3 class="font-semibold text-red-600">Sambal Bawang</h3>
+              <p class="text-xs text-gray-500">Pedas gurih khas rumahan</p>
+            </div>
+          </div>
+          <p class="text-sm text-gray-500">Harga Satuan</p>
+          <p class="font-semibold text-gray-800 mb-2">Rp25.000</p>
+          <p class="text-sm text-gray-500">Paketan (3 Botol)</p>
+          <p class="font-bold text-red-600">Rp70.000</p>
+        </div>
+  
+        <div class="min-w-[250px] md:min-w-0 snap-start bg-white rounded-2xl shadow-md border p-4 flex-shrink-0">
+          <div class="flex items-center gap-3 mb-3">
+            <div class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center text-xl">🌿</div>
+            <div>
+              <h3 class="font-semibold text-green-600">Sambal Ijo</h3>
+              <p class="text-xs text-gray-500">Segar cocok untuk lalapan</p>
+            </div>
+          </div>
+          <p class="text-sm text-gray-500">Harga Satuan</p>
+          <p class="font-semibold text-gray-800 mb-2">Rp25.000</p>
+          <p class="text-sm text-gray-500">Paketan (3 Botol)</p>
+          <p class="font-bold text-red-600">Rp70.000</p>
+        </div>
+  
+        <div class="min-w-[250px] md:min-w-0 snap-start bg-white rounded-2xl shadow-md border p-4 flex-shrink-0">
+          <div class="flex items-center gap-3 mb-3">
+            <div class="w-10 h-10 bg-yellow-100 rounded-full flex items-center justify-center text-xl">🍅</div>
+            <div>
+              <h3 class="font-semibold text-yellow-600">Sambal Tomat</h3>
+              <p class="text-xs text-gray-500">Cocok untuk anak-anak</p>
+            </div>
+          </div>
+          <p class="text-sm text-gray-500">Harga Satuan</p>
+          <p class="font-semibold text-gray-800 mb-2">Rp25.000</p>
+          <p class="text-sm text-gray-500">Paketan (3 Botol)</p>
+          <p class="font-bold text-red-600">Rp70.000</p>
+        </div>
+      </div>
+  
+      <!-- Note -->
+      <div class="mt-4 text-center text-sm text-gray-500">
+        *Harga belum termasuk ongkir
+      </div>
+    </div>
+  </section>
+  
+
+
+
+
+ <!-- Benefits Section - Modern & Mobile First -->
+<section id="detail" class="mx-3 py-10 bg-purple-100 mt-4 rounded-t-[40px] rounded-b-[40px] shadow-xl scroll-mt-28" data-aos="fade-up">
+  <div class="max-w-xl md:max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h2 class="text-2xl sm:text-3xl font-bold text-center text-gray-800 mb-10">Kenapa Pilih <span class="text-purple-600">Sambal Maknyus?</span></h2>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+      <!-- Reusable Benefit Card -->
+      <div class="bg-white p-4 sm:p-5 rounded-2xl border border-gray-200 shadow-sm hover:shadow-md transition">
+        <div class="flex items-start gap-3">
+          <div class="bg-green-100 p-2 rounded-full flex-shrink-0">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+            </svg>
+          </div>
+          <div>
+            <h3 class="font-semibold text-gray-800 text-lg">Pedasnya Pas</h3>
+            <p class="text-sm text-gray-600 mt-1">Nikmatnya luar biasa dengan level pedas yang bisa disesuaikan.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-white p-4 sm:p-5 rounded-2xl border border-gray-200 shadow-sm hover:shadow-md transition">
+        <div class="flex items-start gap-3">
+          <div class="bg-green-100 p-2 rounded-full flex-shrink-0">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+            </svg>
+          </div>
+          <div>
+            <h3 class="font-semibold text-gray-800 text-lg">100% Alami</h3>
+            <p class="text-sm text-gray-600 mt-1">Tanpa pengawet atau bahan kimia tambahan.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-white p-4 sm:p-5 rounded-2xl border border-gray-200 shadow-sm hover:shadow-md transition">
+        <div class="flex items-start gap-3">
+          <div class="bg-green-100 p-2 rounded-full flex-shrink-0">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+            </svg>
+          </div>
+          <div>
+            <h3 class="font-semibold text-gray-800 text-lg">Pengiriman Nasional</h3>
+            <p class="text-sm text-gray-600 mt-1">Bisa dikirim ke seluruh Indonesia dengan packaging aman.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-white p-4 sm:p-5 rounded-2xl border border-gray-200 shadow-sm hover:shadow-md transition">
+        <div class="flex items-start gap-3">
+          <div class="bg-green-100 p-2 rounded-full flex-shrink-0">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+            </svg>
+          </div>
+          <div>
+            <h3 class="font-semibold text-gray-800 text-lg">Kualitas Premium</h3>
+            <p class="text-sm text-gray-600 mt-1">Testimoni pelanggan 5 bintang dari seluruh Indonesia.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-white p-4 sm:p-5 rounded-2xl border border-gray-200 shadow-sm hover:shadow-md transition sm:col-span-2">
+        <div class="flex items-start gap-3">
+          <div class="bg-green-100 p-2 rounded-full flex-shrink-0">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-600" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+            </svg>
+          </div>
+          <div>
+            <h3 class="font-semibold text-gray-800 text-lg">Tahan Lama</h3>
+            <p class="text-sm text-gray-600 mt-1">1 bulan di suhu ruang atau 3 bulan di kulkas setelah dibuka.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+ <!-- Product Variants Section - Circular Cards -->
+<section id="varian" class="mx-3 py-8 bg-purple-100 mt-4 rounded-t-[50px] rounded-b-[50px] shadow-lg scroll-mt-28" data-aos="fade-up">
+  <div class="section-container">
+    <div class="text-center mb-6">
+      <h2 class="text-xl font-bold text-gray-800 mb-1">Varian Sambal Kami</h2>
+      <p class="text-gray-600 text-base">Pilih varian favoritmu dengan cita rasa autentik rumahan</p>
+    </div>
+
+    <!-- Responsive wrapper -->
+    <div class="flex gap-4 overflow-x-auto md:justify-center md:gap-8 md:overflow-visible pb-4 px-1 md:px-0">
+      <!-- Sambal Bawang -->
+      <div class="w-48 h-48 bg-white border border-red-100 p-4 rounded-full shadow-md flex flex-col items-center justify-center text-center flex-shrink-0 snap-center md:w-52 md:h-52">
+        <div class="w-12 h-12 flex items-center justify-center bg-red-100 rounded-full text-2xl mb-2">🌶️</div>
+        <h3 class="font-semibold text-red-600 text-base mb-1">Sambal Bawang</h3>
+        <p class="text-gray-600 text-xs px-2">Pedas gurih khas rumahan</p>
+      </div>
+
+      <!-- Sambal Ijo -->
+      <div class="w-48 h-48 bg-white border border-green-100 p-4 rounded-full shadow-md flex flex-col items-center justify-center text-center flex-shrink-0 snap-center md:w-52 md:h-52">
+        <div class="w-12 h-12 flex items-center justify-center bg-green-100 rounded-full text-2xl mb-2">🌿</div>
+        <h3 class="font-semibold text-green-600 text-base mb-1">Sambal Ijo</h3>
+        <p class="text-gray-600 text-xs px-2">Rasa segar cocok untuk lalapan</p>
+      </div>
+
+      <!-- Sambal Tomat -->
+      <div class="w-48 h-48 bg-white border border-yellow-100 p-4 rounded-full shadow-md flex flex-col items-center justify-center text-center flex-shrink-0 snap-center md:w-52 md:h-52">
+        <div class="w-12 h-12 flex items-center justify-center bg-yellow-100 rounded-full text-2xl mb-2">🍅</div>
+        <h3 class="font-semibold text-yellow-600 text-base mb-1">Sambal Tomat</h3>
+        <p class="text-gray-600 text-xs px-2">Cocok untuk anak-anak</p>
+      </div>
+    </div>
+
+    <!-- Additional Info -->
+    <div class="mt-6 text-center text-sm text-gray-500">
+      💡 <span class="font-medium">Cara Penyimpanan:</span> Simpan di tempat sejuk setelah dibuka. Kocok sebelum digunakan.
+    </div>
+  </div>
+</section>
+
+
+
+  
+
+  <!-- CTA Button -->
+  <div class="py-6 text-center" data-aos="fade-up">
+    <div class="section-container">
+      <a href="https://wa.me/6281234567890" target="_blank" class="bg-red-500 hover:bg-red-600 text-white font-medium py-3 px-6 rounded-lg inline-block text-lg">Pesan Sekarang via WhatsApp</a>
+    </div>
+  </div>
+
+  <!-- Testimonials Section - Carousel -->
+  <section id="testimoni" class="mx-3 py-8 bg-purple-100 rounded-t-[50px] rounded-b-[50px] shadow-lg scroll-mt-28" data-aos="fade-up">
+    <div class="section-container">
+      <h2 class="text-blue-700 text-lg font-semibold mb-6 text-center">Apa Kata Mereka?</h2>
+      
+      <div class="flex overflow-x-auto pb-4 -mx-4 px-4">
+        <div class="flex space-x-4">
+          <!-- Testimonial 1 -->
+          <div class="bg-white p-4 rounded-lg shadow-sm w-64 flex-shrink-0">
+            <div class="flex items-center mb-3">
+              <div class="w-10 h-10 bg-red-100 rounded-full overflow-hidden">
+                <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Customer" class="w-full h-full object-cover">
+              </div>
+              <div class="ml-3">
+                <div class="font-medium text-sm">Sarah Wijaya</div>
+                <div class="star-rating text-xs">★★★★★</div>
+              </div>
+            </div>
+            <p class="text-gray-700 text-sm">"Pedasnya pas banget! Rasanya seperti sambal buatan ibu. Sekarang selalu stok di kulkas."</p>
+          </div>
+          
+          <!-- Testimonial 2 -->
+          <div class="bg-white p-4 rounded-lg shadow-sm w-64 flex-shrink-0">
+            <div class="flex items-center mb-3">
+              <div class="w-10 h-10 bg-blue-100 rounded-full overflow-hidden">
+                <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Customer" class="w-full h-full object-cover">
+              </div>
+              <div class="ml-3">
+                <div class="font-medium text-sm">Budi Santoso</div>
+                <div class="star-rating text-xs">★★★★★</div>
+              </div>
+            </div>
+            <p class="text-gray-700 text-sm">"Pengiriman cepat dan packaging rapi. Sambalnya fresh dan enak banget!"</p>
+          </div>
+
+            <!-- Testimonial 3 -->
+            <div class="bg-white p-4 rounded-lg shadow-sm w-64 flex-shrink-0">
+                <div class="flex items-center mb-3">
+                  <div class="w-10 h-10 bg-red-100 rounded-full overflow-hidden">
+                    <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Customer" class="w-full h-full object-cover">
+                  </div>
+                  <div class="ml-3">
+                    <div class="font-medium text-sm">Sarah Wijaya</div>
+                    <div class="star-rating text-xs">★★★★★</div>
+                  </div>
+                </div>
+                <p class="text-gray-700 text-sm">"Pedasnya pas banget! Rasanya seperti sambal buatan ibu. Sekarang selalu stok di kulkas."</p>
+              </div>
+          
+          <!-- Testimonial 4 -->
+          <div class="bg-white p-4 rounded-lg shadow-sm w-64 flex-shrink-0">
+            <div class="flex items-center mb-3">
+              <div class="w-10 h-10 bg-green-100 rounded-full overflow-hidden">
+                <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Customer" class="w-full h-full object-cover">
+              </div>
+              <div class="ml-3">
+                <div class="font-medium text-sm">Dewi Lestari</div>
+                <div class="star-rating text-xs">★★★★☆</div>
+              </div>
+            </div>
+            <p class="text-gray-700 text-sm">"Anak-anak suka yang sambal tomat. Yang ijo favorit suami buat lalapan."</p>
+          </div>
+          <!-- Testimonial 5 -->
+          <div class="bg-white p-4 rounded-lg shadow-sm w-64 flex-shrink-0">
+            <div class="flex items-center mb-3">
+              <div class="w-10 h-10 bg-blue-100 rounded-full overflow-hidden">
+                <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Customer" class="w-full h-full object-cover">
+              </div>
+              <div class="ml-3">
+                <div class="font-medium text-sm">Budi Santoso</div>
+                <div class="star-rating text-xs">★★★★★</div>
+              </div>
+            </div>
+            <p class="text-gray-700 text-sm">"Pengiriman cepat dan packaging rapi. Sambalnya fresh dan enak banget!"</p>
+            </div>
+           <!-- Testimonial 6-->
+           <div class="bg-white p-4 rounded-lg shadow-sm w-64 flex-shrink-0">
+            <div class="flex items-center mb-3">
+              <div class="w-10 h-10 bg-red-100 rounded-full overflow-hidden">
+                <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Customer" class="w-full h-full object-cover">
+              </div>
+              <div class="ml-3">
+                <div class="font-medium text-sm">Sarah Wijaya</div>
+                <div class="star-rating text-xs">★★★★★</div>
+              </div>
+            </div>
+            <p class="text-gray-700 text-sm">"Pedasnya pas banget! Rasanya seperti sambal buatan ibu. Sekarang selalu stok di kulkas."</p>
+          </div>
+          <!-- Testimonial 7 -->
+          <div class="bg-white p-4 rounded-lg shadow-sm w-64 flex-shrink-0">
+            <div class="flex items-center mb-3">
+              <div class="w-10 h-10 bg-blue-100 rounded-full overflow-hidden">
+                <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Customer" class="w-full h-full object-cover">
+              </div>
+              <div class="ml-3">
+                <div class="font-medium text-sm">Budi Santoso</div>
+                <div class="star-rating text-xs">★★★★★</div>
+              </div>
+            </div>
+            <p class="text-gray-700 text-sm">"Pengiriman cepat dan packaging rapi. Sambalnya fresh dan enak banget!"</p>
+          </div>
+            <!-- Testimonial 8 -->
+            <div class="bg-white p-4 rounded-lg shadow-sm w-64 flex-shrink-0">
+                <div class="flex items-center mb-3">
+                  <div class="w-10 h-10 bg-red-100 rounded-full overflow-hidden">
+                    <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Customer" class="w-full h-full object-cover">
+                  </div>
+                  <div class="ml-3">
+                    <div class="font-medium text-sm">Sarah Wijaya</div>
+                    <div class="star-rating text-xs">★★★★★</div>
+                  </div>
+                </div>
+                <p class="text-gray-700 text-sm">"Pedasnya pas banget! Rasanya seperti sambal buatan ibu. Sekarang selalu stok di kulkas."</p>
+              </div>
+          <!-- Testimonial 9 -->
+          <div class="bg-white p-4 rounded-lg shadow-sm w-64 flex-shrink-0">
+            <div class="flex items-center mb-3">
+              <div class="w-10 h-10 bg-green-100 rounded-full overflow-hidden">
+                <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Customer" class="w-full h-full object-cover">
+              </div>
+              <div class="ml-3">
+                <div class="font-medium text-sm">Dewi Lestari</div>
+                <div class="star-rating text-xs">★★★★☆</div>
+              </div>
+            </div>
+            <p class="text-gray-700 text-sm">"Anak-anak suka yang sambal tomat. Yang ijo favorit suami buat lalapan."</p>
+          </div>
+          <!-- Testimonial 10 -->
+          <div class="bg-white p-4 rounded-lg shadow-sm w-64 flex-shrink-0">
+            <div class="flex items-center mb-3">
+              <div class="w-10 h-10 bg-blue-100 rounded-full overflow-hidden">
+                <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Customer" class="w-full h-full object-cover">
+              </div>
+              <div class="ml-3">
+                <div class="font-medium text-sm">Budi Santoso</div>
+                <div class="star-rating text-xs">★★★★★</div>
+              </div>
+            </div>
+            <p class="text-gray-700 text-sm">"Pengiriman cepat dan packaging rapi. Sambalnya fresh dan enak banget!"</p>
+            </div>
+            <!-- Tambahkan review disini -->
+      </div>
+    </div>
+  </section>
+
+
+  <!-- FAQ Section -->
+<section id="faq" class="mx-3 py-12 bg-purple-100 mt-4 rounded-t-[50px] rounded-b-[50px] shadow-lg scroll-mt-28" data-aos="fade-up">
+  <div class="section-container px-4 max-w-3xl mx-auto">
+    <h2 class="text-2xl font-bold mb-8 text-center text-purple-800">Pertanyaan Umum</h2>
+    
+    <div class="space-y-6">
+      <!-- Item 1 -->
+      <div class="bg-white p-6 rounded-xl shadow-md border border-purple-100 transition-transform hover:scale-[1.02]">
+        <div class="flex items-start gap-3">
+          <div class="text-red-500 text-xl">❓</div>
+          <div>
+            <h3 class="font-semibold text-lg text-gray-800">Berapa lama sambal ini tahan?</h3>
+            <p class="mt-1 text-gray-600 text-sm">Sambal kami tahan 1 bulan di suhu ruang dan 3 bulan jika disimpan di kulkas.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Item 2 -->
+      <div class="bg-white p-6 rounded-xl shadow-md border border-purple-100 transition-transform hover:scale-[1.02]">
+        <div class="flex items-start gap-3">
+          <div class="text-red-500 text-xl">📦</div>
+          <div>
+            <h3 class="font-semibold text-lg text-gray-800">Bisa COD untuk area mana saja?</h3>
+            <p class="mt-1 text-gray-600 text-sm">COD tersedia untuk Jakarta, Depok, Tangerang, dan Bekasi dengan minimal order 3 botol.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Item 3 -->
+      <div class="bg-white p-6 rounded-xl shadow-md border border-purple-100 transition-transform hover:scale-[1.02]">
+        <div class="flex items-start gap-3">
+          <div class="text-red-500 text-xl">🌶️</div>
+          <div>
+            <h3 class="font-semibold text-lg text-gray-800">Apakah sambal ini sangat pedas?</h3>
+            <p class="mt-1 text-gray-600 text-sm">Kami memiliki level pedas yang berbeda. Sambal Bawang paling pedas, sementara Sambal Tomat lebih ringan.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+ <!-- Order Form Section - Modern Design -->
+<section id="order" class="mx-3 py-10 bg-purple-100 mt-4 rounded-t-[50px] rounded-b-[50px] shadow-lg scroll-mt-28" data-aos="fade-up">
+  <div class="section-container max-w-md mx-auto">
+    <h2 class="text-center text-xl font-bold text-red-600 mb-6">Form Pre-Order</h2>
+
+    <form id="order-form" class="space-y-5">
+      <!-- Nama -->
+      <div>
+        <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Nama Lengkap</label>
+        <input type="text" id="name" name="name" class="w-full p-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-red-400 text-sm" required />
+      </div>
+
+      <!-- WhatsApp -->
+      <div>
+        <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">No. WhatsApp</label>
+        <input type="tel" id="phone" name="phone" class="w-full p-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-red-400 text-sm" required />
+      </div>
+
+      <!-- Varian -->
+      <div>
+        <label for="variant" class="block text-sm font-medium text-gray-700 mb-1">Pilih Varian</label>
+        <select id="variant" name="variant" class="w-full p-3 rounded-lg border border-gray-300 text-gray-700 focus:ring-2 focus:ring-red-400 text-sm">
+          <option value="bawang">Sambal Bawang</option>
+          <option value="ijo">Sambal Ijo</option>
+          <option value="tomat">Sambal Tomat</option>
+        </select>
+      </div>
+
+      <!-- Jumlah -->
+      <div>
+        <label for="jumlah" class="block text-sm font-medium text-gray-700 mb-1">Jumlah Pesanan</label>
+        <input type="number" id="jumlah" name="jumlah" min="1" class="w-full p-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-red-400 text-sm" required />
+      </div>
+
+      <!-- Metode Pembayaran -->
+      <div class="text-center">
+        <p class="text-sm font-semibold text-gray-700 mb-2">Pilih Metode Pembayaran:</p>
+        <div class="inline-flex border border-gray-300 rounded-full overflow-hidden shadow-sm">
+          <button type="button" id="btn-bank" onclick="setMetode('bank')" class="px-5 py-2 text-sm font-medium bg-red-500 text-white transition-all">Transfer Bank</button>
+          <button type="button" id="btn-qris" onclick="setMetode('qris')" class="px-5 py-2 text-sm font-medium text-gray-700 hover:bg-gray-100 transition-all">QRIS</button>
+        </div>
+        <input type="hidden" id="metode" name="metode" value="bank" />
+      </div>
+
+      <!-- Detail Pembayaran -->
+      <div id="bank-payment" class="bg-white p-4 rounded-lg border text-sm space-y-4">
+        <p class="text-gray-700 font-medium">Transfer ke salah satu rekening berikut:</p>
+
+        <div class="flex items-center gap-4 p-3 bg-purple-100 rounded-md">
+          <img src="images/bca.png" alt="BCA" class="w-10 h-auto object-contain" />
+          <div>
+            <p class="font-semibold">Bank BCA</p>
+            <p class="font-mono">1234567890</p>
+            <p class="text-xs">a.n. Sambal Maknyus</p>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-4 p-3 bg-purple-100 rounded-md">
+          <img src="images/mandiri.svg" alt="Mandiri" class="w-10 h-auto object-contain" />
+          <div>
+            <p class="font-semibold">Bank Mandiri</p>
+            <p class="font-mono">9876543210</p>
+            <p class="text-xs">a.n. Sambal Maknyus</p>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-4 p-3 bg-purple-100 rounded-md">
+          <img src="images/bni.png" alt="BNI" class="w-10 h-auto object-contain" />
+          <div>
+            <p class="font-semibold">Bank BNI</p>
+            <p class="font-mono">5678901234</p>
+            <p class="text-xs">a.n. Sambal Maknyus</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- QRIS -->
+      <div id="qris-payment" class="hidden bg-white p-4 rounded-lg border text-sm">
+        <p class="text-gray-700 font-medium mb-2">Bayar dengan QRIS:</p>
+        <div class="flex flex-col items-center gap-2 p-3 bg-gray-50 rounded">
+          <img src="images/qrish.jpg" alt="QRIS" class="w-40 rounded shadow" />
+          <p class="text-xs text-gray-600 text-center">Scan kode QR ini dengan e-wallet atau m-banking kamu</p>
+        </div>
+      </div>
+
+      <!-- Upload Bukti -->
+      <div>
+        <label for="bukti" class="block text-sm font-medium text-gray-700 mb-2 text-center">Upload Bukti Pembayaran</label>
+        <label for="bukti" class="block w-full py-2 px-4 bg-blue-500 text-white text-center rounded-lg cursor-pointer hover:bg-blue-600 transition font-medium text-sm">
+          Pilih File
+        </label>
+        <input type="file" id="bukti" name="bukti" accept="image/*" class="hidden" onchange="previewFileName(this)" required>
+        <p id="file-name" class="mt-2 text-sm text-gray-600 italic text-center">Belum ada file dipilih</p>
+      </div>
+
+      <!-- Submit -->
+      <button type="submit" class="w-full bg-red-500 hover:bg-red-600 text-white py-3 rounded-lg font-semibold text-sm">
+        Kirim Pre-Order
+      </button>
+    </form>
+  </div>
+</section>
+
+
+
+ <!-- Contact Info Section - Rata Kiri, Modern Responsive -->
+<section id="kontak" class="mx-3 py-10 px-4 bg-purple-100 mt-4 rounded-t-[50px] rounded-b-[50px] shadow-lg scroll-mt-28" data-aos="fade-up">
+  <div class="max-w-md mx-auto">
+    
+    <!-- Title -->
+    <h2 class="text-xl font-bold text-indigo-700 mb-6 text-left">Hubungi Kami</h2>
+
+    <!-- Contact Info -->
+    <div class="bg-white rounded-2xl shadow p-6 space-y-4 text-sm text-gray-700">
+      <div class="flex items-start gap-3">
+        <span class="text-lg">🏢</span>
+        <p><strong>Alamat:</strong> Jl. Sambal Maknyus No. 123, Jakarta</p>
+      </div>
+      <div class="flex items-start gap-3">
+        <span class="text-lg">🕒</span>
+        <p><strong>Jam Operasional:</strong> Senin–Sabtu, 08:00–17:00 WIB</p>
+      </div>
+      <div class="flex items-start gap-3">
+        <span class="text-lg">💬</span>
+        <p><strong>Respon WhatsApp:</strong> Maksimal 1 jam (jam operasional)</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+  <!-- Footer -->
+  <footer class="mx-3 bg-slate-700 text-slate-100 py-16 pt-4 mt-4 rounded-t-[50px] shadow-lg">
+    <div class="section-container">
+      <div class="flex flex-col items-center space-y-3">
+        <!-- Ikon Sosial Media -->
+        <div class="flex gap-4">
+          <a href="#"><img src="images/ig.png" class="w-6 h-6"></a>
+          <a href="#"><img src="images/fb.png" class="w-6 h-6"></a>
+          <a href="#"><img src="images/tk.png" class="w-6 h-6"></a>         
+        </div>
+        <!-- Hak Cipta -->
+        <div class="text-xs">&copy; 2025 Sambal Maknyus</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Success Modal -->
+<div id="success-modal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4 shadow-lg">
+    <div class="bg-white p-4 rounded-lg max-w-xs w-full">
+      <div class="text-center">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-green-500 mx-auto mb-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+        </svg>
+        <h3 class="font-medium text-gray-900 mb-1">Pesanan Berhasil!</h3>
+        <p class="text-gray-600 text-sm mb-3">Kami akan menghubungi Anda via WhatsApp.</p>
+        <button onclick="closeModal()" class="px-3 py-1 bg-red-500 text-white rounded text-sm hover:bg-red-600">
+          Tutup
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Promo Alert -->
+  <div id="promo-alert" class="fixed bottom-1 left-1/2 -translate-x-1/2 w-[95%] max-w-lg z-50 bg-yellow-400/40 backdrop-blur-md text-yellow-900 text-center px-4 py-2 rounded-xl shadow-xl flex items-center justify-between gap-2 transition-all duration-500 animate-fade-in text-sm sm:text-base">
+   <div class="flex items-center gap-2">
+      <span class="font-semibold whitespace-nowrap">🔥 Promo Berakhir Dalam:</span>
+      <span id="session-countdown"
+            class="text-sm sm:text-lg font-bold font-mono tracking-wider bg-yellow-100/70 px-2 py-0.5 rounded animate-pulse shadow-inner">
+        02:00:00
+      </span>
+    </div>
+    <a id="promo-button"
+       href="https://wa.me/6281234567890?text=Halo%2C%20saya%20tertarik%20dengan%20promo%20sambal%20Anda!"
+       target="_blank"
+       class="bg-red-500/80 hover:bg-red-600 text-white text-xs sm:text-sm font-semibold py-1 px-3 rounded-lg shadow hover:shadow-lg transition-all duration-300">
+      Ambil Diskon!
+    </a>
+  </div>
+
+
+  <!-- Modal image -->
+<div id="imageModal" class="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 flex items-center justify-center hidden">
+  <!-- Modal Content -->
+  <div class="relative bg-white rounded-xl overflow-hidden shadow-2xl max-w-md w-full">
+    <!-- Tombol Close Modern -->
+    <button id="closeModalBtn" class="absolute top-3 right-3 w-9 h-9 rounded-full bg-white text-red-500 shadow-md flex items-center justify-center hover:bg-red-500 hover:text-white transition-all duration-300 z-50">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+      </svg>
+    </button>
+    <!-- Gambar di dalam Modal -->
+    <img id="modalImage" src="images/merah.png" alt="Popup Image" class="w-full h-auto object-cover rounded-xl" />
+  </div>
+</div>
+
+  
+  <!-- Batas Akhir untuk html dan tailwindcss -->
+
+
+  <!-- Scripts Javascript dibawah sini-->  
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    // Initialize AOS (Animate On Scroll)
+    AOS.init();
+  
+    // Handle modal submit form
+    document.getElementById("order-form").addEventListener("submit", function (e) {
+      e.preventDefault();
+      document.getElementById("success-modal").classList.remove("hidden");
+      this.reset();
+    });
+  
+    // Fungsi global untuk menutup modal
+    window.closeModal = function () {
+      document.getElementById("success-modal").classList.add("hidden");
+    };
+  
+    // Preview nama file yang dipilih
+    function previewFileName(input) {
+      const fileName = input.files.length > 0 ? input.files[0].name : "Belum ada file dipilih";
+      document.getElementById("file-name").textContent = fileName;
+    }
+  
+    // Auto slide khusus mobile view
+    document.addEventListener("DOMContentLoaded", () => {
+      const slider = document.getElementById("productSlider");
+      // cek jika slider ada dan lebar layar kurang dari 768px
+      if (slider && window.innerWidth < 768) {
+        let scrollAmount = 0;
+        const gap = 16;
+        const itemWidth = slider.children[0].offsetWidth + gap;
+        const maxScroll = slider.scrollWidth - slider.clientWidth;
+  
+        setInterval(() => {
+          scrollAmount += itemWidth;
+          if (scrollAmount > maxScroll) {
+            scrollAmount = 0;
+          }
+  
+          slider.scrollTo({
+            left: scrollAmount,
+            behavior: "smooth"
+          });
+        }, 3000);
+      }
+   
+    });
+
+  // Promo countdown timer
+  document.addEventListener("DOMContentLoaded", function () {
+  const countdownEl = document.getElementById("session-countdown");
+  const promoButton = document.getElementById("promo-button");
+  const promoAlert = document.getElementById("promo-alert");
+
+  const twoHours = 2 * 60 * 60 * 1000; // 2 jam dalam ms
+  let countdownInterval;
+
+  // Fungsi cek apakah promo aktif berdasarkan hari & jam
+  function checkPromoActive() {
+    const now = new Date(); // fungsi untuk mendapatkan waktu saat ini 
+    const day = now.getDay(); // fungsi untuk mendapatkan hari saat ini 0-6 (Minggu-Sabtu)
+    const hours = now.getHours(); //fungsi untuk mendapatkan jam saat ini 0-23
+
+    // Hari aktif: Selasa (2), Rabu (3), Jumat (5)
+    const activeDays = [2, 3, 5];
+    // Jam aktif: 08:00 - 23:00
+    const isPromoActive = activeDays.includes(day) && (hours >= 8 && hours < 23);
+    // fungsi untuk menyembunyikan alert jika promo tidak aktif
+    if (!isPromoActive) {
+      promoAlert.classList.add("opacity-0", "pointer-events-none");
+      promoButton.classList.add("hidden");
+      return false;
+    }
+
+    return true;
+  }
+
+  // Fungsi untuk menjalankan countdown
+  function startCountdown(endTime) {
+    countdownInterval = setInterval(() => {
+      const now = new Date().getTime();
+      const distance = endTime - now;
+      // fungsi untuk menghentikan countdown jika waktu habis
+      if (distance <= 0) {
+        clearInterval(countdownInterval);
+        localStorage.removeItem("promoEndTime");
+        countdownEl.textContent = "00:00:00";
+        promoButton.classList.add("hidden");
+        promoAlert.classList.add("opacity-0", "pointer-events-none");
+        return;
+      }
+      //fungsi untuk menghitung jam, menit, dan detik
+      const hours = String(Math.floor((distance / (1000 * 60 * 60)))).padStart(2, '0');
+      const minutes = String(Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60))).padStart(2, '0');
+      const seconds = String(Math.floor((distance % (1000 * 60)) / 1000)).padStart(2, '0');
+      //fungsi untuk menampilkan countdown
+      countdownEl.textContent = `${hours}:${minutes}:${seconds}`;
+    }, 1000);
+  }
+
+  // Jalankan hanya jika promo aktif
+  if (checkPromoActive()) {
+    const savedEnd = localStorage.getItem("promoEndTime");
+    // Jika ada waktu yang tersimpan, gunakan itu
+    if (savedEnd) {
+      const endTime = parseInt(savedEnd);
+      startCountdown(endTime);
+      promoAlert.classList.remove("opacity-0", "pointer-events-none");
+      // Jika waktu sudah habis, sembunyikan tombol
+    } else {
+      const newEnd = new Date().getTime() + twoHours;
+      localStorage.setItem("promoEndTime", newEnd);
+      startCountdown(newEnd);
+      promoAlert.classList.remove("opacity-0", "pointer-events-none");
+    }
+  }
+});
+
+// Fungsi untuk toggle antara metode pembayaran
+  function setMetode(value) {
+    const metodeInput = document.getElementById('metode');
+    const btnBank = document.getElementById('btn-bank');
+    const btnQris = document.getElementById('btn-qris');
+    const bankDiv = document.getElementById('bank-payment');
+    const qrisDiv = document.getElementById('qris-payment');
+
+    metodeInput.value = value;
+
+    if (value === 'bank') {
+      btnBank.classList.add('bg-red-500', 'text-white');
+      btnQris.classList.remove('bg-red-500', 'text-white');
+      btnQris.classList.add('text-gray-700');
+
+      bankDiv.classList.remove('hidden');
+      qrisDiv.classList.add('hidden');
+    } else {
+      btnQris.classList.add('bg-red-500', 'text-white');
+      btnBank.classList.remove('bg-red-500', 'text-white');
+      btnBank.classList.add('text-gray-700');
+
+      qrisDiv.classList.remove('hidden');
+      bankDiv.classList.add('hidden');
+    }
+  }
+
+   // Highlight menu saat scroll
+const sections = document.querySelectorAll("section[id]");
+const navLinks = document.querySelectorAll("nav a");
+
+window.addEventListener("scroll", () => {
+  let current = "";
+
+  const scrollPos = window.pageYOffset;
+  const windowHeight = window.innerHeight;
+  const bodyHeight = document.body.offsetHeight;
+
+  sections.forEach((section) => {
+    const sectionTop = section.offsetTop;
+    const sectionHeight = section.offsetHeight;
+
+    // Scroll harus benar-benar berada DI DALAM section
+    if (
+      scrollPos >= sectionTop - 200 &&
+      scrollPos < sectionTop + sectionHeight - 200
+    ) {
+      current = section.getAttribute("id");
+    }
+  });
+
+  // Paksa current ke 'kontak' jika sudah di bawah banget
+  if (window.innerHeight + scrollPos >= bodyHeight - 5) {
+    current = "kontak";
+  }
+
+  // Update active nav
+  navLinks.forEach((link) => {
+    link.classList.remove("text-red-500", "font-bold");
+    if (link.getAttribute("href") === "#" + current) {
+      link.classList.add("text-red-500", "font-bold");
+    }
+  });
+});
+
+  //fungsi untuk menampilkan gambar di modal
+  document.addEventListener("DOMContentLoaded", function () {
+    const modal = document.getElementById("imageModal");
+    const modalImg = document.getElementById("modalImage");
+    const closeBtn = document.getElementById("closeModalBtn");
+
+    // Klik gambar → tampilkan modal
+    document.querySelectorAll(".produk-gallery img").forEach(img => {
+      img.addEventListener("click", () => {
+        modalImg.src = img.src;
+        modal.classList.remove("hidden");
+      });
+    });
+
+    // Klik tombol ✕ → tutup modal
+    closeBtn.addEventListener("click", () => {
+      modal.classList.add("hidden");
+      modalImg.src = "";
+    });
+
+    // Klik area luar gambar → tutup modal
+    modal.addEventListener("click", (e) => {
+      if (e.target === modal) {
+        modal.classList.add("hidden");
+        modalImg.src = "";
+      }
+    });
+  });
+
+  // Scroll to top on page load
+  window.addEventListener("load", () => {
+    setTimeout(() => {
+      window.scrollTo({ top: 0, behavior: "instant" });
+    }, 0);
+  });
+</script>
+</body>
+</html>
